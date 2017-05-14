@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 600px;
+  height: 300px;
+}
+
+h2 {
+  animation: 3s ease-in 1s 1 reverse both running slidein;
+}
+
+#banner-container {
+  width: 100%;
+  height: 100%;
+  animation-name:banner;
+  animation-duration:70s;
+  animation-timing-function:linear;
+  animation-delay:3s;
+  animation-iteration-count:2;
+  animation-direction:alternate;
+  animation-play-state:running;
+}
+
+#polling_message {
+  color: white;
+  float: left;
+  margin-right: 2%;
+}
+
+#view_port {
+  background-color: black;
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#cylon_eye {
+  background-color: red;
+  background-image: linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+  color: white;
+  height: 100%;
+  width: 20%;
+  animation: 3s linear 1s infinite alternate move_eye;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 120%;
+    width: 100%;
+  }
+}
+
+@keyframes banner {
+  0% {
+    background-image:url("images/primera.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  9% {
+    background-image:url("images/segunda.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  18% {
+    background-image:url("images/tercera.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  27% {
+    background-image:url("images/cuarta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  36% {
+    background-image:url("images/quinta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  45% {
+    background-image:url("images/sexta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  54% {
+    background-image:url("images/septima.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  63% {
+    background-image:url("images/octava.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  72% {
+    background-image:url("images/novena.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  81% {
+    background-image:url("images/decima.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  90% {
+    background-image:url("images/undecima.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background-image:url("images/realmadrid.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@keyframes move_eye {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
