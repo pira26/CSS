@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#main {
+	display: inline;
+	padding: 0 0 15px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+	-ms-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+	-o-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+#main li {
+	position: relative;
+	display: inline-block;
+	padding: 15px 20px;
+	background-color: #fefefe;
+	cursor: pointer;
+}
+
+#main li:hover {
+	background-color: red;
+	color: #fff;
+}
+
+#dropdown {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	z-index: 2;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+	-ms-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+	-o-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+#dropdown li {
+	color: #000;
+}
+
+#dropdown li:hover {
+	opacity: 1;
+	visibility: visible;
+}
