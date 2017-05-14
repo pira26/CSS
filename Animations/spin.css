@@ -1,0 +1,52 @@
+body {
+	margin:0;
+}
+	
+#container {
+	margin:200px 0 0 400px;
+
+}
+		
+#spinner {
+	-webkit-animation-name: spinner;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 6s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 180px 0 0;
+}
+
+#spinner img {
+	position:absolute;
+	height: 200px;
+	width: 200px;
+}
+		
+#spinner:hover {	
+	-webkit-animation-play-state:paused;		
+}
+
+#html {
+	-webkit-transform: rotateY(0deg) translateX(180px);
+}
+
+#css {
+	-webkit-transform: rotateY(90deg) translateX(180px);
+}
+
+#js {
+	-webkit-transform: rotateY(180deg) translateX(180px);
+}
+
+#react {
+	-webkit-transform: rotateY(270deg) translateX(180px);
+}
+
+@keyframes spinner {
+	from {
+		-webkit-transform: rotateY(0deg);
+	}
+	to {
+		-webkit-transform: rotateY(-360deg);
+	}
+}
