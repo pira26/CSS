@@ -1,6 +1,7 @@
 # CSS
 
 CSS Folder containning some projects with:
+  - Accordion Menu
   - Animations (2D, 3D)
   - Banner
   - Buttons
