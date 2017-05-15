@@ -1,0 +1,91 @@
+@font-face {
+	font-family: "SuperMario";
+	src: url(./SuperMario.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	text-align: center;
+	background-image: url("http://3.bp.blogspot.com/-LTBUOWMg4g4/VC0otUjhmfI/AAAAAAAAQoc/o1ecqJMXNlU/s1600/china%2Bstreets.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: play 0s running infinite;
+	font-family: SuperMario;
+	color: #fff;
+}
+
+@keyframes play {
+	from { background-position: 0px; }
+	to { background-position: -752px; }
+}
+
+#container > * {
+	display: block;
+}
+
+#sprite-container {
+	text-align: justify;
+}
+
+#sprite-container:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+
+#sprite-container > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#btn-container {
+	text-align: center;
+}
+
+button {
+	display: inline-block;
+}
+
+h1 {
+	padding: 15px;
+	font-size: 10em;
+	letter-spacing: 4px;
+}
+
+h2 {
+	font-size: 8em;
+	color: #000;
+	letter-spacing: -15px;
+}
+
+/* ******************************************************* SPRITE VERSION GIF ***************************************************************** */
+
+#man {
+	background-image: url(https://cdn.codeandweb.com/blog/2014/11/05/animate-sprites-in-css-with-texturepacker/capguy-walk.png);
+	width: 184px;  /* 1472px au total */
+	height: 325px;
+	animation: walk 1s steps(8) infinite;
+}
+
+@keyframes walk {
+	from { background-position: 0px; }
+	to { background-position: -1472px; }
+}
+
+/* ******************************************************* SPRITE VERSION GIF JS *************************************************************** */
+
+#woman {
+	background-image: url(https://cdn.codeandweb.com/blog/2016/05/10/how-to-create-a-sprite-sheet/spritestrip.png);
+	width: 253px;  /* 1518px au total */
+	height: 250px;
+	animation: run 0s steps(6) infinite;
+}
+
+@keyframes run {
+	from { background-position: 0px; }
+	to { background-position: -1518px; }
+}
