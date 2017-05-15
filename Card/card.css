@@ -1,0 +1,119 @@
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #deddcd;
+	font: 14px/21px "Velera Round", "Roboto";
+}
+
+#container {
+	width: 1150px;
+	height: auto;
+	margin: 40px auto;
+}
+
+h1 {
+	text-align: center;
+	padding: 5px;
+	font-size: 5em;
+	color: #7a3f3a;
+	font-style: italic;
+}
+
+.poster {
+	margin: 100px 0;
+	height: 550px;
+	list-style: none;
+}
+.poster li {
+	display: inline;
+	float: left;
+	-webkit-perspective: 500;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition-property: perspective;
+	-webkit-transition-duration: 0.5s;
+	-moz-perspective: 500;
+	-moz-transform-style: preserve-3d;
+	-moz-transition-property: perspective;
+	-moz-transition-duration: 0.5s;
+}
+.poster li:hover {
+	-webkit-perspective: 5000;
+	-moz-perspective: 5000;
+}
+
+.poster li img {
+	width: 350px;
+	height: 400px;
+	border: 10px solid #fcfafa;
+	-webkit-transform: rotateY(30deg);
+	-webkit-box-shadow: 0 3px 10px #888;
+	-webkit-transition-property: transform;
+	-webkit-transition-duration: 0.5s;
+	-moz-transform: rotateY(30deg);
+	-moz-box-shadow: 0 3px 10px #888;
+	-moz-transition-property: transform;
+	-moz-transition-duration: 0.5s;
+}
+
+.poster li:hover img {
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+}
+
+.info {
+	position:absolute;
+	width: 200px;
+	height: 180px;
+	border: 10px solid #fcfafa;
+	margin: -195px 0 0 55px;
+	padding: 20px;
+	background-color: #deddcd;
+	text-align: center;
+	-webkit-box-shadow: 0 20px 40px #888;
+	-webkit-transform: translateZ(30px) rotateY(30deg);
+	-webkit-transition-property: transform, box-shadow, margin;
+	-webkit-transition-duration: 0.5s;
+	-moz-box-shadow: 0 20px 40px #888;
+	-moz-transform: translateZ(30px) rotateY(30deg);
+	-moz-transition-property: transform, box-shadow, margin;
+	-moz-transition-duration: 0.5s;
+}
+
+.poster li:hover .info {
+	-webkit-transform: rotateY(0deg);
+	-webkit-box-shadow: 0 5px 10px #888;
+	-moz-transform: rotateY(0deg);
+	-moz-box-shadow: 0 5px 10px #888;
+	margin: -175px 0 0 30px;
+}
+
+.info h2 {
+	color: #7a3f3a;
+	font-variant: small-caps;
+	padding-bottom: 15px;
+}
+
+.info p {
+	padding-bottom: 15px;
+	font-family: "Roboto";
+}
+
+.info a {
+	display: block;
+	width: 80px;
+	margin:0 auto;
+	padding: 5px 10px;
+	background-color: #7a3f3a;
+	color: #eee;
+	text-decoration: none;
+	border-radius: 5px;
+	font-family: "Roboto";
+}
+
+.info a:hover, .info a:focus {
+	background-color: #6a191f;
+	color: #fff;
+}
