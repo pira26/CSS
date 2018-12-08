@@ -7,8 +7,12 @@ body {
 	color: #FFF;
 }
 
-a.animated-button:link,
-a.animated-button:visited {
+
+.mrng-60-top {
+	margin-top: 60px;
+}
+/* Global Button Styles */
+a.animated-button:link, a.animated-button:visited {
 	position: relative;
 	display: block;
 	margin: 30px auto 0;
@@ -28,8 +32,7 @@ a.animated-button:visited {
 	-o-transition: all 1s ease;
 	transition: all 1s ease;
 }
-a.animated-button:link:after,
-a.animated-button:visited:after {
+a.animated-button:link:after, a.animated-button:visited:after {
 	content: "";
 	position: absolute;
 	height: 0%;
@@ -42,17 +45,14 @@ a.animated-button:visited:after {
 	-o-transition: all 0.75s ease 0s;
 	transition: all 0.75s ease 0s;
 }
-a.animated-button:link:hover,
-a.animated-button:visited:hover {
+a.animated-button:link:hover, a.animated-button:visited:hover {
 	color: #FFF;
 	text-shadow: none;
 }
-a.animated-button:link:hover:after
-a.animated-button:visited:hover:after {
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
 	height: 450%;
 }
-a.animated-button:link,
-a.animated-button:visited {
+a.animated-button:link, a.animated-button:visited {
 	position: relative;
 	display: block;
 	margin: 30px auto 0;
@@ -75,30 +75,30 @@ a.animated-button:visited {
 
 /* Victoria Buttons */
 
-a.animated-a.victoria-one {
+a.animated-button.victoria-one {
 	border: 2px solid #D24D57;
 }
-a.animated-a.victoria-one:after {
+a.animated-button.victoria-one:after {
 	background: #D24D57;
 	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 }
-a.animated-a.victoria-two {
+a.animated-button.victoria-two {
 	border: 2px solid #D24D57;
 }
-a.animated-a.victoria-two:after {
+a.animated-button.victoria-two:after {
 	background: #D24D57;
 	-moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
 	-ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
 	transform: translateX(-50%) translateY(-50%) rotate(25deg);
 }
-a.animated-a.victoria-three {
+a.animated-button.victoria-three {
 	border: 2px solid #D24D57;
 }
-a.animated-a.victoria-three:after {
+a.animated-button.victoria-three:after {
 	background: #D24D57;
 	opacity: .5;
 	-moz-transform: translateX(-50%) translateY(-50%);
@@ -106,14 +106,14 @@ a.animated-a.victoria-three:after {
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-a.animated-a.victoria-three:hover:after {
+a.animated-button.victoria-three:hover:after {
 	height: 140%;
 	opacity: 1;
 }
-a.animated-a.victoria-four {
+a.animated-button.victoria-four {
 	border: 2px solid #D24D57;
 }
-a.animated-a.victoria-four:after {
+a.animated-button.victoria-four:after {
 	background: #D24D57;
 	opacity: .5;
 	-moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
@@ -121,17 +121,17 @@ a.animated-a.victoria-four:after {
 	-webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
 	transform: translateY(-50%) translateX(-50%) rotate(90deg);
 }
-a.animated-a.victoria-four:hover:after {
+a.animated-button.victoria-four:hover:after {
 	opacity: 1;
 	height: 600% !important;
 }
 /* Sandy Buttons */
 
-a.animated-a.sandy-one {
+a.animated-button.sandy-one {
 	border: 2px solid #AEA8D3;
 	color: #FFF;
 }
-a.animated-a.sandy-one:after {
+a.animated-button.sandy-one:after {
 	border: 3px solid #AEA8D3;
 	opacity: 0;
 	-moz-transform: translateX(-50%) translateY(-50%);
@@ -140,16 +140,16 @@ a.animated-a.sandy-one:after {
 	transform: translateX(-50%) translateY(-50%);
 	
 }
-a.animated-a.sandy-one:hover:after {
+a.animated-button.sandy-one:hover:after {
 	height: 120% !important;
 	opacity: 1;
 	color: #FFF;
 }
-a.animated-a.sandy-two {
+a.animated-button.sandy-two {
 	border: 2px solid #AEA8D3;
 	color: #FFF;
 }
-a.animated-a.sandy-two:after {
+a.animated-button.sandy-two:after {
 	border: 3px solid #AEA8D3;
 	opacity: 0;
 	-moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
@@ -157,16 +157,16 @@ a.animated-a.sandy-two:after {
 	-webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
 	transform: translateY(-50%) translateX(-50%) rotate(90deg);
 }
-a.animated-a.sandy-two:hover:after {
+a.animated-button.sandy-two:hover:after {
 	height: 600% !important;
 	opacity: 1;
 	color: #FFF;
 }
-a.animated-a.sandy-three {
+a.animated-button.sandy-three {
 	border: 2px solid #AEA8D3;
 	color: #FFF;
 }
-a.animated-a.sandy-three:after {
+a.animated-button.sandy-three:after {
 	border: 3px solid #AEA8D3;
 	opacity: 0;
 	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
@@ -174,16 +174,16 @@ a.animated-a.sandy-three:after {
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 }
-a.animated-a.sandy-three:hover:after {
+a.animated-button.sandy-three:hover:after {
 	height: 400% !important;
 	opacity: 1;
 	color: #FFF;
 }
-a.animated-a.sandy-four {
+a.animated-button.sandy-four {
 	border: 2px solid #AEA8D3;
 	color: #FFF;
 }
-a.animated-a.sandy-four:after {
+a.animated-button.sandy-four:after {
 	border: 3px solid #AEA8D3;
 	opacity: 0;
 	-moz-transform: translateY(-50%) translateX(-50%) rotate(25deg);
@@ -191,18 +191,18 @@ a.animated-a.sandy-four:after {
 	-webkit-transform: translateY(-50%) translateX(-50%) rotate(25deg);
 	transform: translateY(-50%) translateX(-50%) rotate(25deg);
 }
-a.animated-a.sandy-four:hover:after {
+a.animated-button.sandy-four:hover:after {
 	height: 400% !important;
 	opacity: 1;
 	color: #FFF;
 }
 /* Gibson Buttons */
 
-a.animated-a.gibson-one {
+a.animated-button.gibson-one {
 	border: 2px solid #65b37a;
 	color: #FFF;
 }
-a.animated-a.gibson-one:after {
+a.animated-button.gibson-one:after {
 	opacity: 0;
 	background-image: -webkit-linear-gradient( transparent 50%, rgba(101,179,122,0.2) 50%);
 	background-image: -moz-linear-gradient(transparent 50%, rgba(101,179,122,0.2) 50%);
@@ -212,16 +212,16 @@ a.animated-a.gibson-one:after {
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
 	transform: translateX(-50%) translateY(-50%) rotate(25deg);
 }
-a.animated-a.gibson-one:hover:after {
+a.animated-button.gibson-one:hover:after {
 	height: 600% !important;
 	opacity: 1;
 	color: #FFF;
 }
-a.animated-a.gibson-two {
+a.animated-button.gibson-two {
 	border: 2px solid #65b37a;
 	color: #FFF;
 }
-a.animated-a.gibson-two:after {
+a.animated-button.gibson-two:after {
 	opacity: 0;
 	background-image: -webkit-linear-gradient( transparent 50%, rgba(101,179,122,0.2) 50%);
 	background-image: -moz-linear-gradient(transparent 50%, rgba(101,179,122,0.2) 50%);
@@ -231,16 +231,16 @@ a.animated-a.gibson-two:after {
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 }
-a.animated-a.gibson-two:hover:after {
+a.animated-button.gibson-two:hover:after {
 	height: 600% !important;
 	opacity: 1;
 	color: #FFF;
 }
-a.animated-a.gibson-three {
+a.animated-button.gibson-three {
 	border: 2px solid #65b37a;
 	color: #FFF;
 }
-a.animated-a.gibson-three:after {
+a.animated-button.gibson-three:after {
 	opacity: 0;
 	background-image: -webkit-linear-gradient( transparent 50%, rgba(101,179,122,0.2) 50%);
 	background-image: -moz-linear-gradient(transparent 50%, rgba(101,179,122,0.2) 50%);
@@ -250,16 +250,16 @@ a.animated-a.gibson-three:after {
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
 	transform: translateX(-50%) translateY(-50%) rotate(90deg);
 }
-a.animated-a.gibson-three:hover:after {
+a.animated-button.gibson-three:hover:after {
 	height: 600% !important;
 	opacity: 1;
 	color: #FFF;
 }
-a.animated-a.gibson-four {
+a.animated-button.gibson-four {
 	border: 2px solid #65b37a;
 	color: #FFF;
 }
-a.animated-a.gibson-four:after {
+a.animated-button.gibson-four:after {
 	opacity: 0;
 	background-image: -webkit-linear-gradient( transparent 50%, rgba(101,179,122,0.2) 50%);
 	background-image: -moz-linear-gradient(transparent 50%, rgba(101,179,122,0.2) 50%);
@@ -269,14 +269,14 @@ a.animated-a.gibson-four:after {
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-a.animated-a.gibson-four:hover:after {
+a.animated-button.gibson-four:hover:after {
 	height: 600% !important;
 	opacity: 1;
 	color: #FFF;
 }
 /* Thar Buttons */
 
-a.animated-a.thar-one {
+a.animated-button.thar-one {
 	color: #fff;
 	cursor: pointer;
 	display: block;
@@ -284,17 +284,17 @@ a.animated-a.thar-one {
 	border: 2px solid #F7CA18;
 	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
-a.animated-a.thar-one:hover {
+a.animated-button.thar-one:hover {
 	color: #000 !important;
 	background-color: transparent;
 	text-shadow: none;
 }
-a.animated-a.thar-one:hover:before {
+a.animated-button.thar-one:hover:before {
 	bottom: 0%;
 	top: auto;
 	height: 100%;
 }
-a.animated-a.thar-one:before {
+a.animated-button.thar-one:before {
 	display: block;
 	position: absolute;
 	left: 0px;
@@ -307,7 +307,7 @@ a.animated-a.thar-one:before {
 	background: #F7CA18;
 	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
-a.animated-a.thar-two {
+a.animated-button.thar-two {
 	color: #fff;
 	cursor: pointer;
 	display: block;
@@ -315,17 +315,17 @@ a.animated-a.thar-two {
 	border: 2px solid #F7CA18;
 	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
-a.animated-a.thar-two:hover {
+a.animated-button.thar-two:hover {
 	color: #000 !important;
 	background-color: transparent;
 	text-shadow: ntwo;
 }
-a.animated-a.thar-two:hover:before {
+a.animated-button.thar-two:hover:before {
 	top: 0%;
 	bottom: auto;
 	height: 100%;
 }
-a.animated-a.thar-two:before {
+a.animated-button.thar-two:before {
 	display: block;
 	position: absolute;
 	left: 0px;
@@ -338,7 +338,7 @@ a.animated-a.thar-two:before {
 	background: #F7CA18;
 	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
-a.animated-a.thar-three {
+a.animated-button.thar-three {
 	color: #fff;
 	cursor: pointer;
 	display: block;
@@ -346,17 +346,17 @@ a.animated-a.thar-three {
 	border: 2px solid #F7CA18;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
-a.animated-a.thar-three:hover {
+a.animated-button.thar-three:hover {
 	color: #000 !important;
 	background-color: transparent;
 	text-shadow: nthree;
 }
-a.animated-a.thar-three:hover:before {
+a.animated-button.thar-three:hover:before {
 	left: 0%;
 	right: auto;
 	width: 100%;
 }
-a.animated-a.thar-three:before {
+a.animated-button.thar-three:before {
 	display: block;
 	position: absolute;
 	top: 0px;
@@ -369,7 +369,7 @@ a.animated-a.thar-three:before {
 	background: #F7CA18;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
-a.animated-a.thar-four {
+a.animated-button.thar-four {
 	color: #fff;
 	cursor: pointer;
 	display: block;
@@ -377,17 +377,17 @@ a.animated-a.thar-four {
 	border: 2px solid #F7CA18;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
-a.animated-a.thar-four:hover {
+a.animated-button.thar-four:hover {
 	color: #000 !important;
 	background-color: transparent;
 	text-shadow: nfour;
 }
-a.animated-a.thar-four:hover:before {
+a.animated-button.thar-four:hover:before {
 	right: 0%;
 	left: auto;
 	width: 100%;
 }
-a.animated-a.thar-four:before {
+a.animated-button.thar-four:before {
 	display: block;
 	position: absolute;
 	top: 0px;
