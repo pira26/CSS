@@ -26,7 +26,7 @@ a {
     font-weight:bold;
 }
 .rainbow-btn:after {
-    content:attr(type);
+    content:attr(alt);
     width:20vw;
     height:8vw;
     background-color:#191919;
