@@ -1,0 +1,63 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+    background: url("https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2040&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+} 
+
+div {
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.album {
+    display: block;
+    position: relative;
+    width: 12rem;
+    margin: 10rem auto;
+    z-index: 5;
+}
+
+.album img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12rem;
+    height: 12rem;
+    border: 5px solid #fff;
+    box-shadow: 1px 1px 2px #666;
+    transition: all 1s ease-in-out;
+}
+
+.album:hover .photo1, .album:focus .photo1 {
+    transform: rotate(-6deg) translate(-100px, -3px) scale(1.1);
+}
+
+.album:hover .photo2, .album:focus .photo2 {
+    transform: rotate(0deg) translate(0, -8px) scale(1.1);
+}
+
+.album:hover .photo3, .album:focus .photo3 {
+    transform: rotate(6deg) translate(100px, -3px) scale(1.1);
+}
